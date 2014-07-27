@@ -1,6 +1,6 @@
 makeCacheMatrix <- function(x = matrix()) {
 # This function transforms the input matrix in an object, encapsulating two 
-# variables (the main matrix 'x' and its inverse 's') and four methods to handle
+# variables (the main matrix 'x' and its inverse 'i') and four methods to handle
 # these values
       
       # Creating auxiliary variable (to store the inverse). As this function  
@@ -9,10 +9,10 @@ makeCacheMatrix <- function(x = matrix()) {
       i <- NULL
       
       # Method '$set', used to apply a new value to the main variable 'x' of the 
-      # object (the main matrix).
+      # object (the main matrix) and reseting the auxiliary variable 'i'.
       set <- function(y) {
             x <<- y
-            s <<- NULL
+            i <<- NULL
       }
       
       # Method '$get', used to retrieve the main value of the object (the main 
