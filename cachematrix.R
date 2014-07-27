@@ -25,12 +25,12 @@ makeCacheMatrix <- function(x = matrix()) {
       
       # Method '$getSolve', used to retrieve the cached value stored in the 
       # auxiliary variable 'i'
-      getSolve <- function() s
+      getSolve <- function() i
       
       # Listing all the above functions to return them as methods of the object
       list(set = set, get = get,
-           setsolve = setsolve,
-           getsolve = getsolve)
+           setSolve = setSolve,
+           getSolve = getSolve)
 }
 
 
